@@ -80,13 +80,30 @@ For https://en.wikipedia.org/wiki/DevOps:
 
 ![Screenshot from 2025-02-18 02-31-41](https://github.com/user-attachments/assets/aa74b62c-907c-4975-87f5-0c9cc6525663)
 
+<br> <br>
+
 
 
 ![Screenshot from 2025-02-18 02-39-17](https://github.com/user-attachments/assets/347222fa-823e-4778-9d43-175fd0f2300d)
 
 
 
+<br> <br>
 
+Sample Output
+For:  https://en.wikipedia.org/wiki/Television
+<br> <br>
+![Screenshot from 2025-02-18 03-23-44](https://github.com/user-attachments/assets/a6ccd821-21b5-4cbf-8c2f-410abf7318dc)
+
+<br> <br>
+
+Sample Output
+For:   https://en.wikipedia.org/wiki/Internet_of_things
+<br> <br>
+![Screenshot from 2025-02-18 03-29-56](https://github.com/user-attachments/assets/45434c5b-8f96-4e95-a7ca-36ac23be3e5e)
+
+<br> <br>
+<br> <br>
 
 
 ## Technical Notes
