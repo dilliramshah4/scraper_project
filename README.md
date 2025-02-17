@@ -13,7 +13,10 @@ A Dockerized application that scrapes a user-specified URL using Node.js/Puppete
 
 ## Prerequisites
 - Docker: [Installation Guide](https://docs.docker.com/get-docker/)
-- (Optional) Git: To clone this repository:    https://github.com/dilliramshah4/scraper_project
+- (Optional) Git: To clone this repository:   
+```bash
+git clone https://github.com/dilliramshah4/scraper_project
+```
 
 ## Usage
 
@@ -44,10 +47,7 @@ Example (map host port 5000 → container port 5000):
 sudo docker run -p 5000:5000 scraper-server
 ```
 
-For background execution:
-```bash
-sudo docker run -d -p 5000:5000 scraper-server
-```
+
 
 ### 3. Passing the URL
 The target URL must be provided during build:
