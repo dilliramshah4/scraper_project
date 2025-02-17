@@ -13,41 +13,40 @@ A Dockerized application that scrapes a user-specified URL using Node.js/Puppete
 
 ## Prerequisites
 - Docker: [Installation Guide](https://docs.docker.com/get-docker/)
-- (Optional) Git: To clone this repository
+- (Optional) Git: To clone this repository:    https://github.com/dilliramshah4/scraper_project
 
 ## Usage
 
 ### 1. Build the Docker Image
 ```bash
-docker build -t scraper-server \
-  --build-arg SCRAPE_URL=<your-target-url> .
+sudo docker build --no-cache -t scraper-server--build-arg SCRAPE_URL=<your-target-url> .
 ```
 
 Example (Wikipedia DevOps page):
 ```bash
-docker build -t scraper-server \
+sudo docker build -t scraper-server \
   --build-arg SCRAPE_URL=https://en.wikipedia.org/wiki/DevOps .
 ```
 
 Note: Add `--no-cache` flag to force fresh scrape:
 ```bash
-docker build --no-cache -t scraper-server \
+sudo docker build --no-cache -t scraper-server \
   --build-arg SCRAPE_URL=<your-target-url> .
 ```
 
 ### 2. Run the Container
 ```bash
-docker run -p [HOST_PORT]:5000 scraper-server
+sudo docker run -p [HOST_PORT]:5000 scraper-server
 ```
 
 Example (map host port 5000 → container port 5000):
 ```bash
-docker run -p 5000:5000 scraper-server
+sudo docker run -p 5000:5000 scraper-server
 ```
 
 For background execution:
 ```bash
-docker run -d -p 5000:5000 scraper-server
+sudo docker run -d -p 5000:5000 scraper-server
 ```
 
 ### 3. Passing the URL
@@ -58,8 +57,7 @@ The target URL must be provided during build:
 
 Example for GitHub documentation:
 ```bash
-docker build -t scraper-server \
-  --build-arg SCRAPE_URL=https://github.com/docker/docker .
+sudo docker build --no-cache -t scraper-server   --build-arg SCRAPE_URL=https://en.wikipedia.org/wiki/Internet_of_things .
 ```
 
 Important: To change URLs, you need to rebuild the image.
@@ -85,6 +83,9 @@ For https://en.wikipedia.org/wiki/DevOps:
 
 
 ![Screenshot from 2025-02-18 02-39-17](https://github.com/user-attachments/assets/347222fa-823e-4778-9d43-175fd0f2300d)
+
+
+
 
 
 
