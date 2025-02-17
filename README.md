@@ -82,12 +82,11 @@ For https://en.wikipedia.org/wiki/DevOps:
 
 ![Screenshot from 2025-02-18 02-31-41](https://github.com/user-attachments/assets/aa74b62c-907c-4975-87f5-0c9cc6525663)
 
-```json
-{
-  "title": "DevOps - Wikipedia",
-  "content": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)..."
-}
-```
+
+
+![Screenshot from 2025-02-18 02-39-17](https://github.com/user-attachments/assets/347222fa-823e-4778-9d43-175fd0f2300d)
+
+
 
 ## Technical Notes
 - **Data Freshness**: Scraped data is captured at build time.
