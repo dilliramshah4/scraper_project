@@ -52,7 +52,7 @@ The target URL must be provided during build:
 --build-arg SCRAPE_URL=<your-url>
 ```
 
-Example for Wikipedia documentation:
+Example for  Wikipedia documentation:
 ```bash
 sudo docker build --no-cache -t scraper-server   --build-arg SCRAPE_URL=https://en.wikipedia.org/wiki/Internet_of_things .
 ```
