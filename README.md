@@ -27,15 +27,12 @@ sudo docker build --no-cache -t scraper-server--build-arg SCRAPE_URL=<your-targe
 
 Example (Wikipedia DevOps page):
 ```bash
-sudo docker build -t scraper-server \
+sudo docker build --no-cache -t scraper-server \
   --build-arg SCRAPE_URL=https://en.wikipedia.org/wiki/DevOps .
 ```
 
-Note: Add `--no-cache` flag to force fresh scrape:
-```bash
-sudo docker build --no-cache -t scraper-server \
-  --build-arg SCRAPE_URL=<your-target-url> .
-```
+Note:  `--no-cache`is use to flag to force fresh scrape:
+
 
 ### 2. Run the Container
 ```bash
@@ -55,7 +52,7 @@ The target URL must be provided during build:
 --build-arg SCRAPE_URL=<your-url>
 ```
 
-Example for GitHub documentation:
+Example for Wikipedia documentation:
 ```bash
 sudo docker build --no-cache -t scraper-server   --build-arg SCRAPE_URL=https://en.wikipedia.org/wiki/Internet_of_things .
 ```
